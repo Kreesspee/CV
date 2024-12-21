@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>SKY</title>
+</head>
+<body>
+
+<span style="display: inline-block; width: 100%; text-align: center;">
+    <h1 style="font-size: 48px;">Обзор исследований</h1>
+    {% for file_name in file_list %}
+        <a style="font-size: 32px;" href="{{ url + '/' + file_name }}" >{{ file_name }}</a> <br>
+    {% endfor %}
+<a style="font-size: 32px;" href="/">На главную</a>
+</span>
+</body>
+</html>
